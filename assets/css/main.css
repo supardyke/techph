@@ -78,7 +78,9 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #0544A8;
     color: #0544A8;
 }
-
+.tp-blue-outline:hover {
+        color: #0544A8;
+}
 .tp-fixed-button {
     position: fixed;
     right: 3em;
@@ -92,6 +94,48 @@ body::-webkit-scrollbar-thumb {
 
 .tp-fixed-button:hover {
     color: #FFF;
+}
+.tp-button-social {
+    border: 1px solid #FFF;
+    color: #fff;
+    cursor: pointer;
+    font: 100%/1.75 sans-serif;
+    display: inline-block;
+    margin-top: .8em;
+    padding: 0 .95em 0 0;
+    text-align: center;
+    text-decoration: none;  
+    position: relative;
+    font-family: 'Inconsolata', monospace;
+    
+}
+.tp-button-social:hover {
+    color: #FFF;
+}
+
+.tp-button-social:before {
+    content: "";
+    float: left;
+    font: 120%/1.65  'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: normal;
+    margin: 0 0.5em 0 0;
+    padding: 0 0.5em;
+    text-align: center;
+}
+
+.tp-button-social.slack:before {
+    content: "\f198";    
+    font-family: "Font Awesome 5 Brands"; 
+    font-weight: 400; 
+    background:#462759;
+}
+
+.tp-button-social.facebook:before {
+    content: "\f39e";    
+    font-family: "Font Awesome 5 Brands"; 
+    font-weight: 400; background:#033482;
+    padding:0 .7em
 }
 
 @media (max-width: 768px) {
