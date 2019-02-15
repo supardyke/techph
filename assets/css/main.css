@@ -196,16 +196,36 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*=========== Sidebar  ===========*/
+.sidebar-toggle {
+  position: absolute;
+  left: 1em;
+  top: 0;
+  display: none;
+  padding: 1em;
+  background-color: #FFF;
+  font-weight: 900;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: .9s;
+  transition: .9s;
+}
 
 #tp-nav {
     position: fixed;
     height: 100vh;
+    left: 0;
+    top: 0;
     z-index: 99;
+    background-color: #FFF;
+    display: block;
 }
 
 #tp-nav .logo-area {
     padding: 3em 0;
-    display: none;
+    position: absolute;
+    top: 5%;
+    left: 20%;
+    display: block;
 }
 
 #tp-nav .menu-list a {
@@ -245,14 +265,28 @@ body::-webkit-scrollbar-thumb {
     color: #626262;
 }
 
+#tp-nav .is-active {
+  opacity: 0;
+-webkit-transition: .8s;
+  transition: .8s;
+}
+
 @media (max-width: 920px) {
+    .sidebar-toggle {
+        display: inline-block;
+    }
     #tp-nav {
-        position: fixed;
-        width: 100%;
-        height: 100vh;
         z-index: 99;
         display: none;
+        width: 70%;
+        position: fixed;
+        height: 100vh;
+        transition: .2s ease;
+      
     }
+    #tp-nav .is-active {
+    width: 50%;
+  }
 }
 
 /*============ Main ==============*/
@@ -269,12 +303,12 @@ body::-webkit-scrollbar-thumb {
 /*=========== Top Nav =========*/
 .nav {
     position: relative;
-    z-index:999;
+    z-index:999999;
 }
 .nav a.nav-notification {
     padding: .8em .9em ;
     position: absolute;
-    right: 5em;
+    right: 4.8em;
 }
 .nav a.nav-notification:hover {
     color: #FFF;
@@ -285,6 +319,8 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 }
+
+
 /*============= Intro ===========*/
 
 .main-content .tp-intro {
@@ -298,13 +334,13 @@ body::-webkit-scrollbar-thumb {
 
 .main-content .tp-intro .tp-intro-content {
     margin: 8em 0;
-    font-family: 'Consolas', 'Space Mono', monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 .main-content .tp-intro .tp-intro-content h1 {
     font-size: 42px;
     font-weight: 600;
-    line-height: 1.4em;
+    line-height: 1.8em;
 }
 
 .main-content .tp-intro .tp-intro-content p {
@@ -335,7 +371,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 25px;
         font-weight: 500;
         font-family: 'Space Mono', monospace;
-        line-height: 1.3em;
+        line-height: 2em;
         word-break: none;
         width: 100%;
     }
