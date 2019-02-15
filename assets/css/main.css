@@ -266,7 +266,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #tp-nav .is-active {
-  opacity: 0;
+  opacity: 1;
 -webkit-transition: .8s;
   transition: .8s;
 }
