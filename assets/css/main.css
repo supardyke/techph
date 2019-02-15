@@ -220,7 +220,16 @@ body::-webkit-scrollbar-thumb {
 .tp-mobile-logo {
     display: none;
 }
-
+#sub-menu {
+    height: 100vh;
+    background-color: #F4F4F4;
+    position: fixed;
+    top: 0;
+    padding: 6em 8em;
+    left: 25%;
+    display: none;
+    transition: display .8s ease;
+}
 #tp-nav {
     position: fixed;
     height: 100vh;

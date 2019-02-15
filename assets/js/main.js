@@ -4,6 +4,11 @@ $(document).ready(function() {
                     $('#tp-nav').toggleClass('is-active');
 
           });
+          //submenu 
+          $('.sub-toggle').on('click', function() {
+                    $('#sub-menu').toggleClass('is-active');
+
+          });
 
           //close sidebar
           var $sidebar = $('#tp-nav');
