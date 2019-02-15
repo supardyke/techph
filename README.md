@@ -1,4 +1,4 @@
-# techph
+# techph.ng
 Tech PH's official website
 
 ## Prerequisites
