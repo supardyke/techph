@@ -50,10 +50,10 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 920px) {
     .tp-text-centered {
-    width: 100%;
-    margin: 0 auto;
-    padding: .4em;
-}
+        width: 100%;
+        margin: 0 auto;
+        padding: .4em;
+    }
 }
 
 /*====:: Background :: ====*/
@@ -61,6 +61,7 @@ body::-webkit-scrollbar-thumb {
     background: #033077;
     color: #FFF;
 }
+
 .is-light-blue {
     background: #0544A8;
     color: #FFF;
@@ -72,12 +73,14 @@ body::-webkit-scrollbar-thumb {
 }
 
 .is-pink {
-    background:#F02040;
+    background: #F02040;
     color: #FFF;
 }
+
 .is-basic {
     background: #e8f9f9;
 }
+
 /*====:: Buttons :: ====*/
 .tp-button {
     padding: .8em 3em;
@@ -98,9 +101,11 @@ body::-webkit-scrollbar-thumb {
     border: 1px solid #0544A8;
     color: #0544A8;
 }
+
 .tp-blue-outline:hover {
-        color: #0544A8;
+    color: #0544A8;
 }
+
 .tp-fixed-button {
     position: fixed;
     right: 3em;
@@ -116,6 +121,7 @@ body::-webkit-scrollbar-thumb {
 .tp-fixed-button:hover {
     color: #FFF;
 }
+
 .tp-button-social {
     border: 1px solid #FFF;
     color: #fff;
@@ -125,11 +131,12 @@ body::-webkit-scrollbar-thumb {
     margin-top: .8em;
     padding: 0 .95em 0 0;
     text-align: center;
-    text-decoration: none;  
+    text-decoration: none;
     position: relative;
     font-family: 'Space Mono', monospace;
-    
+
 }
+
 .tp-button-social:hover {
     color: #FFF;
 }
@@ -137,7 +144,7 @@ body::-webkit-scrollbar-thumb {
 .tp-button-social:before {
     content: "";
     float: left;
-    font: 120%/1.65  'Space Mono', monospace;
+    font: 120%/1.65 'Space Mono', monospace;
     font-style: normal;
     font-weight: normal;
     margin: 0 0.5em 0 0;
@@ -146,18 +153,19 @@ body::-webkit-scrollbar-thumb {
 }
 
 .tp-button-social.slack:before {
-    content: "\f198";    
-    font-family: "Font Awesome 5 Brands"; 
-    font-weight: 400; 
-    background:#4B104C;
-        padding: 0.5em 0.5em;
-        line-height: 1.1em;
+    content: "\f198";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    background: #4B104C;
+    padding: 0.5em 0.5em;
+    line-height: 1.1em;
 }
 
 .tp-button-social.facebook:before {
-    content: "\f39e";    
-    font-family: "Font Awesome 5 Brands"; 
-    font-weight: 400; background:#033077;
+    content: "\f39e";
+    font-family: "Font Awesome 5 Brands";
+    font-weight: 400;
+    background: #033077;
     padding: 0.5em 0.7em 0.5em 0.6em;
     line-height: 1.1em;
 }
@@ -196,17 +204,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*=========== Sidebar  ===========*/
-.sidebar-toggle {
-  position: relative;
-  display: none;
-  padding: 1em;
-  cursor: pointer;
-  -webkit-transition:opacity .9s ease-in;
-  transition:opacity .9s ease-in;
+.nav.toggle {
+    padding: 2em 0.3em !important;
 }
-    .tp-mobile-logo {
-        display: none;
-    }
+
+.sidebar-toggle {
+    position: relative;
+    display: none;
+    padding: 1em;
+    cursor: pointer;
+    -webkit-transition: opacity .9s ease-in;
+    transition: opacity .9s ease-in;
+}
+
+.tp-mobile-logo {
+    display: none;
+}
 
 #tp-nav {
     position: fixed;
@@ -263,19 +276,21 @@ body::-webkit-scrollbar-thumb {
     color: #626262;
 }
 
-#tp-nav .is-active {
-  display: block;
--webkit-transition: .8s;
-  transition: .8s;
+.is-active {
+    display: block !important;
+    -webkit-transition: .8s;
+    transition: .8s;
 }
 
 @media (max-width: 920px) {
     .sidebar-toggle {
         display: inline;
     }
+
     .tp-mobile-logo {
         display: inline;
     }
+
     #tp-nav {
         z-index: 99;
         display: none;
@@ -283,13 +298,14 @@ body::-webkit-scrollbar-thumb {
         position: fixed;
         height: 100vh;
         transition: .2s ease;
-      
+
     }
-    #tp-nav .is-active {
-  display: block;
--webkit-transition: .8s;
-  transition: .8s;
-}
+
+    .is-active {
+        display: block !important;
+        -webkit-transition: .8s;
+        transition: .8s;
+    }
 }
 
 /*============ Main ==============*/
@@ -303,13 +319,15 @@ body::-webkit-scrollbar-thumb {
     right: 0;
     z-index: 1;
 }
+
 /*=========== Top Nav =========*/
 .nav {
     position: relative;
-    z-index:999999;
+    z-index: 999999;
 }
+
 .nav a.nav-notification {
-    padding: .8em .9em ;
+    padding: .8em .9em;
     position: absolute;
     right: 4.8em;
 }
@@ -360,13 +378,14 @@ body::-webkit-scrollbar-thumb {
         position: relative;
         text-align: left;
         padding: .4em;
-        max-height:  70vh;
+        max-height: 70vh;
         width: 100%;
     }
-.main-content .tp-intro .tp-intro-content {
-    margin: 4em 0;
-    font-family: 'Consolas', 'Space Mono', monospace;
-}
+
+    .main-content .tp-intro .tp-intro-content {
+        margin: 4em 0;
+        font-family: 'Consolas', 'Space Mono', monospace;
+    }
 
     .main-content .tp-intro .tp-intro-content h1 {
         font-size: 25px;
@@ -429,10 +448,12 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 920px) {
-    .tp-about .tp-about-content .tp-about-img  {
+    .tp-about .tp-about-content .tp-about-img {
         background-size: cover;
         background-position: center;
-        width: 100%;    }
+        width: 100%;
+    }
+
     .tp-about .tp-about-content .tp-about-text {
         padding: 5em 1.2em;
     }
@@ -641,13 +662,13 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 920px) {
     .tp-people .tp-sec .tp-left .tp-people-heading {
-    font-weight: 600;
-    font-size: 30px;
-    padding: 2.5em 0 0 .6em;
-    line-height: 2em;
-    color: #FFF;
-    line-height: 2em;
-}
+        font-weight: 600;
+        font-size: 30px;
+        padding: 2.5em 0 0 .6em;
+        line-height: 2em;
+        color: #FFF;
+        line-height: 2em;
+    }
 
     .tp-people .tp-sec .tp-right .tp-right-text {
         padding: 2.4em 0 0 .6em;
@@ -674,9 +695,11 @@ body::-webkit-scrollbar-thumb {
     background: #eee;
     font-family: 'Space Mono', monospace;
 }
+
 .tp-footer p {
     color: #626262;
 }
+
 .tp-footer p span {
     color: #f00;
 }
