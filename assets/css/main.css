@@ -292,6 +292,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 920px) {
+#sub-menu {
+    height: 100vh;
+    background-color: #F4F4F4;
+    position: fixed;
+    top: 0;
+    padding: 6em 8em;
+    left: 50%;
+    display: none;
+    transition: display .8s ease;
+}
     .sidebar-toggle {
         display: inline;
     }
@@ -303,7 +313,7 @@ body::-webkit-scrollbar-thumb {
     #tp-nav {
         z-index: 99;
         display: none;
-        width: 70%;
+        width: 50%;
         position: fixed;
         height: 100vh;
         transition: .2s ease;

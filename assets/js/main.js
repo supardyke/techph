@@ -19,6 +19,7 @@ $(document).ready(function() {
                               $sidebar.has(e.target).length === 0) {
                               $sidebar.removeClass('is-active');
                     }
+
           });
 
 });
