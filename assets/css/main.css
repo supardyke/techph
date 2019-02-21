@@ -27,6 +27,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 /*=========== Resuseable classes ==========*/
+/*====:: Text color :: ===*/
+.text-active {
+  color: #033077 !important;
+}
+
 /*====:: Positioning :: ====*/
 .is-vertical-center {
   position: absolute;
