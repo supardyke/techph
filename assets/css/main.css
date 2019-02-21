@@ -287,7 +287,6 @@ body::-webkit-scrollbar-thumb {
   top: 5%;
   left: 20%;
   display: block;
-  padding: 1em 0;
 }
 
 #tp-nav .menu-list a {
@@ -367,6 +366,12 @@ body::-webkit-scrollbar-thumb {
     -o-transition: .2s ease;
     transition: .2s ease;
   }
+  #tp-nav .logo-area {
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  display: block;
+}
 
   .is-active {
     display: block !important;
@@ -499,6 +504,7 @@ body::-webkit-scrollbar-thumb {
 
 .main-content .tp-intro .tp-intro-content {
   font-family: 'Space Mono', monospace;
+  height: 100%;
 }
 
 .main-content .tp-intro .tp-intro-content h1 {
@@ -640,9 +646,11 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 599px) {
   .tp-about .tp-about-content .tp-about-img {
     width: 100%;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    height: 300px;
   }
+
 
   .tp-about .tp-about-content .tp-about-text {
     padding: 5em 1.2em;
@@ -664,13 +672,8 @@ body::-webkit-scrollbar-thumb {
     -ms-flex-direction: column-reverse;
   }
 
-  .tp-about .tp-about-content .tp-about-img {
-    height: 200px;
-    margin-top: 0;
-  }
-
   .tp-about .tp-about-content .tp-about-img2 {
-    min-height: 200px;
+    min-height: 300px;
     margin-top: 0;
   }
 }
@@ -678,8 +681,9 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 600px) {
   .tp-about .tp-about-content .tp-about-img {
     width: 100%;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    height: 300px;
   }
 
   .tp-about .tp-about-content .tp-about-text {
@@ -701,14 +705,8 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
   }
-
-  .tp-about .tp-about-content .tp-about-img {
-    height: 200px;
-    margin-top: 0;
-  }
-
   .tp-about .tp-about-content .tp-about-img2 {
-    min-height: 200px;
+    min-height: 300px;
     margin-top: 0;
   }
 }
@@ -716,8 +714,9 @@ body::-webkit-scrollbar-thumb {
 @media (max-width: 900px) {
   .tp-about .tp-about-content .tp-about-img {
     width: 100%;
-    background-position: center;
+    background-position: top center;
     background-size: cover;
+    height: 300px;
   }
 
   .tp-about .tp-about-content .tp-about-text {
@@ -739,14 +738,8 @@ body::-webkit-scrollbar-thumb {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
   }
-
-  .tp-about .tp-about-content .tp-about-img {
-    height: 200px;
-    margin-top: 0;
-  }
-
   .tp-about .tp-about-content .tp-about-img2 {
-    height: 200px;
+    height: 300px;
     margin-top: 0;
   }
 }
