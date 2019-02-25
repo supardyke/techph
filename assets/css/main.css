@@ -658,7 +658,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .tp-about .tp-about-content .tp-about-text {
-    min-height: 050px;
+    min-height: 400px;
     padding: 4em 1.2em 1em 1em;
   }
 
@@ -685,7 +685,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 426px) {
   .tp-about .tp-about-content .tp-about-text {
-    min-height: 65vh;
+    min-height: 400px;
     padding: 3.5em 1.2em 1em 1em;
   }
 }
