@@ -347,7 +347,7 @@ body::-webkit-scrollbar-thumb {
   transition: .8s;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 744px) {
   #sub-menu {
     position: fixed;
     top: 0;
@@ -803,8 +803,7 @@ body::-webkit-scrollbar-thumb {
 /*======== People ============*/
 .tp-people {
   font-family: 'Space Mono', monospace;
-  min-height: 100vh;
-  padding: 2em 0;
+  padding: 8em 0;
 }
 .tp-people .tp-people-heading h1 {
   padding: 0 2em 2em 0;
@@ -895,10 +894,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 754px) {
-  .tp-people {
-    padding-bottom: 12em;
-  }
-
   .tp-people .tp-sec .tp-left .tp-people-heading {
     font-size: 30px;
     font-weight: 600;
