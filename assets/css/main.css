@@ -588,7 +588,7 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 594px) {
   .tp-about .tp-about-content .tp-about-img {
     width: 100%;
-    height: 300px;
+    min-height: 50vh;
     background-position: top center;
     background-size: cover;
   }
@@ -628,7 +628,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 954px) {
   .tp-about .tp-about-content .tp-about-img {
-    height: 100vh;
+    min-height: 50vh;
     background-position: top center;
     background-size: cover;
   }
@@ -652,13 +652,13 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (max-width: 769px) {
   .tp-about .tp-about-content .tp-about-img {
     width: 100%;
-    height: 300px;
+    min-height: 50vh;
     background-position: top center;
     background-size: cover;
   }
 
   .tp-about .tp-about-content .tp-about-text {
-    min-height: 439px;
+    min-height: 050px;
     padding: 4em 1.2em 1em 1em;
   }
 
@@ -678,7 +678,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .tp-about .tp-about-content .tp-about-img2 {
-    min-height: 300px;
+   min-height: 50vh;
     margin-top: 0;
   }
 }
@@ -796,7 +796,9 @@ body::-webkit-scrollbar-thumb {
   min-height: 100vh;
   padding: 2em 0;
 }
-
+.tp-people .tp-people-heading h1 {
+  padding: 0 2em 2em 0;
+}
 .tp-people .tp-sec .tp-left {
   position: relative;
   padding: 0;
@@ -806,7 +808,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 6% 0;
+
 }
 
 .tp-people .tp-sec .tp-left .tp-img-grid .tp-img-grid-item {
@@ -818,7 +820,7 @@ body::-webkit-scrollbar-thumb {
 .tp-people .tp-sec .tp-left .tp-img-grid .see-more {
   position: absolute;
   right: 0;
-  bottom: 3em;
+  bottom: 18px;
   padding: .8em .6em;
 }
 
@@ -841,7 +843,7 @@ body::-webkit-scrollbar-thumb {
 .tp-people .tp-sec .tp-right .tp-right-text {
   position: relative;
   height: 70vh;
-  padding: 5.4em 0 2em 3em;
+  padding: 5.4em 0 0 3em;
 }
 
 .tp-people .tp-sec .tp-right .tp-right-text p {
@@ -852,13 +854,13 @@ body::-webkit-scrollbar-thumb {
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text {
   position: absolute;
-  bottom: .8em;
+  bottom: 10px;
   width: 100%;
 }
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text p {
   font-size: 18px;
-  margin: 3em 0;
+  margin: 30px 0;
 }
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text .tp-button {
@@ -936,8 +938,8 @@ body::-webkit-scrollbar-thumb {
 @media only screen and (min-width: 1274px) {
   .tp-people .tp-sec .tp-right .tp-right-text {
   position: relative;
-  min-height: 60vh;
-  padding: 5.4em 0 2em 3em;
+  min-height: 63vh;
+  padding: 5.4em 0 0 3em;
 }
 }
 /*======== Footer =======*/
@@ -965,4 +967,4 @@ body::-webkit-scrollbar-thumb {
 
 .tp-footer .copyright {
   line-height: 12em;
-}git af
+}
