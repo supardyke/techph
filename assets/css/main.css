@@ -100,6 +100,7 @@ body::-webkit-scrollbar-thumb {
 
 /*====:: Buttons :: ====*/
 .tp-button {
+  position: relative;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
   padding: .8em 3em;
@@ -231,7 +232,12 @@ body::-webkit-scrollbar-thumb {
 .ml-sm {
   margin-left: 1.5em;
 }
-
+.arrow-right {
+  width: 30px;
+  position: absolute;
+  top: 0;
+  padding: 0 0 0 .5em !important;
+}
 /*=========== Sidebar  ===========*/
 .nav.toggle {
   padding: 2em .3em !important;
@@ -492,7 +498,7 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
 }
 
-@media (max-width: 634px) {
+@media (max-width: 434px) {
   .main-content .tp-intro .tp-intro-content p {
     padding: .3em 0;
   }
@@ -576,7 +582,7 @@ body::-webkit-scrollbar-thumb {
 .tp-about .tp-about-content .tp-about-text {
   font-family: 'Space Mono', monospace;
   min-height: 50vh;
-  padding: 3em 5em 5em 4em;
+  padding: 6em 5em 5em 4em;
 }
 
 .tp-about .tp-about-content .tp-about-text h1 {
