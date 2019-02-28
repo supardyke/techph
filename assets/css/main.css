@@ -103,7 +103,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
-  padding: .8em 3em;
+  padding: .8em 4em .8em 2em;
 }
 
 .tp-button:hover {
