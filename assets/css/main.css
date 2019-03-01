@@ -103,7 +103,7 @@ body::-webkit-scrollbar-thumb {
   position: relative;
   font-family: 'Space Mono', monospace;
   font-weight: 600;
-  padding: .8em 4em .8em 2em;
+  padding: .8em 5em .8em 3em;
 }
 
 .tp-button:hover {
@@ -191,7 +191,7 @@ body::-webkit-scrollbar-thumb {
   .tp-button {
     font-family: 'Space Mono', monospace;
     font-weight: 600;
-    padding: .8em 1em;
+    padding: .8em 3em .8em 1em;
   }
 
   .tp-fixed-button {
@@ -257,24 +257,11 @@ body::-webkit-scrollbar-thumb {
   display: none;
 }
 
-#sub-menu {
-  position: fixed;
-  top: 0;
-  left: 25%;
-  display: none;
-  height: 100vh;
-  padding: 6em 8em;
-  -webkit-transition: display .8s ease;
-  -o-transition: display .8s ease;
-  transition: display .8s ease;
-  background-color: #f4f4f4;
-}
-
 #tp-nav {
   position: fixed;
-  z-index: 99;
+  z-index: 5;
   top: 0;
-  left: 0;
+  left: 0 ;
   display: block;
   height: 100vh;
   background-color: #fff;
@@ -283,20 +270,75 @@ body::-webkit-scrollbar-thumb {
 #tp-nav .logo-area {
   position: absolute;
   top: 5%;
-  left: 20%;
+  left: 7em;
   display: block;
 }
-
+@media (max-width: 744px) {
+  #tp-nav .logo-area {
+  position: absolute;
+  top: 5%;
+  left: 1em;
+  display: block;
+}
+}
+@media (max-width: 954px) {
+  #tp-nav .logo-area {
+  position: absolute;
+  top: 5%;
+  left: 5em;
+  display: block;
+}
+}
+@media (max-width: 594px) {
+  #tp-nav .logo-area {
+  position: absolute;
+  top: 5%;
+  left: 2em;
+  display: block;
+}
+}
+@media (max-width: 426px) {
+  #tp-nav .logo-area {
+  position: absolute;
+  top: 5%;
+  left: 1em;
+  display: block;
+}
+}
 #tp-nav .menu-list a {
   font-family: 'Space Mono', monospace;
   font-size: 14px;
   font-weight: 900;
-  line-height: 2.3em;
+  line-height: 2.5em;
   padding: 1em .3em;
   letter-spacing: 2px;
   border-bottom: 1px solid #ddd;
+
 }
 
+#sub-menu {
+  position: fixed;
+  top: 0;
+  left: 25%;
+  width: 20%;
+  display: none;
+  height: 100vh;
+  padding: 6em 8em;
+  -webkit-transition: display .8s ease;
+  -o-transition: display .8s ease;
+  transition: display .8s ease;
+  background-color: #f4f4f4;
+}
+#sub-menu .menu-list a {
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 4.5em;
+  padding: 1em .3em;
+  letter-spacing: 2px;
+  border-bottom: 1px solid #ddd;
+
+}
 @media (max-width: 744px) {
   #tp-nav .menu-list a {
     font-family: 'Space Mono', monospace;
@@ -809,7 +851,7 @@ body::-webkit-scrollbar-thumb {
 /*======== People ============*/
 .tp-people {
   font-family: 'Space Mono', monospace;
-  padding: 8em 0;
+  padding: 5em 0 5em 0;
 }
 .tp-people .tp-people-heading h1 {
   padding: 0 2em 2em 0;
@@ -883,6 +925,7 @@ body::-webkit-scrollbar-thumb {
   color: #0544a8;
   background: #fff;
   margin-right: .8em;
+  padding: .8em 3em .8em 3em;
 }
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text .tp-button:last-child {
@@ -900,6 +943,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 754px) {
+  .tp-people {
+  font-family: 'Space Mono', monospace;
+  padding: 2em 0 2em 0;
+}
   .tp-people .tp-sec .tp-left .tp-people-heading {
     font-size: 30px;
     font-weight: 600;
@@ -924,6 +971,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media (max-width: 954px) {
+  .tp-people {
+  font-family: 'Space Mono', monospace;
+  padding: 2em 0 2em 0;
+}
   .tp-people .tp-sec .tp-left .tp-people-heading {
     font-size: 30px;
     font-weight: 600;
