@@ -1160,14 +1160,44 @@ Home page
 .tp-footer .copyright {
   line-height: 12em;
 }
-
+/* |||| Pages ||||| */
 /*========
 About page
 ===========*/
 .about-us-holder {
   width: 100%;
+  margin: 0 !important;
 }
-
+.about-us-holder .about-us-text {
+  min-height: 50vh;
+  padding:6em !important;
+}
+.about-us-holder .about-us-text p {
+  font-size: 18px;
+  font-family: 'Space Mono', monospace;
+  padding: 2em;
+  opacity: .7;
+}
+.about-us-holder .about-us-img {
+ min-height: 50vh;
+ background: url('/assets/img/tp-people/about-us.jpg');
+ background-repeat: no-repeat;
+ background-position: center center;
+ background-size: cover;
+ object-fit: cover;
+}
+@media (max-width: 744px) {
+  .about-us-holder .about-us-text {
+  min-height: 50vh;
+  padding:3em !important;
+}
+.about-us-holder .about-us-text p {
+  font-size: 16px;
+  font-family: 'Space Mono', monospace;
+  padding: .4em;
+  opacity: .7;
+}
+}
 /*===========
 Community Page
 ===========*/
