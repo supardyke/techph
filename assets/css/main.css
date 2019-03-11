@@ -187,7 +187,11 @@ section {
   color: #fff;
   border: 1px solid #fff;
 }
-
+@media only screen and (max-width: 1520px)  {
+  .tp-button-social {
+  font: 80%/2.5 'Space Mono', monospace;
+}
+}
 .tp-button-social:hover {
   color: #fff;
 }
@@ -808,7 +812,13 @@ Home page
     margin-top: 0;
   }
 }
-
+@media only screen and (max-width: 1520px) {
+  .tp-about .tp-about-content .tp-about-text1 {
+  font-family: 'Space Mono', monospace;
+  min-height: 50vh;
+  padding: 2em 5em 5em 4em;
+}
+}
 @media only screen and (max-width: 1274px) {
   .tp-about .tp-about-content .tp-about-text {
     min-height: 50vh;
