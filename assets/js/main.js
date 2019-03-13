@@ -3,11 +3,6 @@ $(document).ready(function() {
 	$('.sidebar-toggle').on('click', function() {
 		$('#tp-nav').toggleClass('became-active');
 	});
-	//submenu
-	$('.sub-toggle').on('click', function() {
-		$('#sub-menu').toggleClass('became-active');
-		$('.sub-toggle').toggleClass('text-active');
-	});
 	//close sidebar
 	var $sidebar = $('#tp-nav');
 	$(document).on('mouseup', function(e) {

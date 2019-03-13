@@ -39,7 +39,10 @@ section {
   margin: 0 !important;
   padding: 0 !important;
 }
-/*====:: Text color :: ===*/
+/*====:: Text/Font :: ===*/
+.title {
+  font-size: 28px !important;
+}
 .tab {
   border-bottom:none !important;
 }
@@ -61,7 +64,7 @@ section {
 }
 
 .text-active {
-  color: #033077 !important;
+  color: #0544a8 !important;
 }
 .has-blue-text {
   color: #0544A8 !important;
@@ -131,7 +134,13 @@ section {
 .is-basic {
   background: #f3f5fa;
 }
-
+.is-primary-a {background: #F8FAFE;}
+.is-primary-b {background:#FEF8FB;}
+.is-primary-c {background:#F8FEF8;}
+.is-primary-d {background:##FEFAF8;}
+.is-primary-e {background:##FEF8FD;}
+.is-primary-f {background:#FDF8FE;}
+.is-primary-g {background:#F8FAFE;}
 /*====:: Buttons :: ====*/
 .tp-button {
   position: relative;
@@ -160,8 +169,7 @@ section {
 
 .tp-fixed-button {
   position: fixed;
-  right: 3em;
-  right: 4em;
+  right: 7em;
   bottom: 4em;
   padding: .8em 1.1em;
   color: #fff;
@@ -302,7 +310,7 @@ section {
 .sidebar-toggle {
   position: relative;
   display: none;
-  padding: 1em;
+  padding: 0 0 0 .4em;
   cursor: pointer;
   -webkit-transition: opacity .9s ease-in;
   -o-transition: opacity .9s ease-in;
@@ -313,7 +321,7 @@ section {
   display: none;
 }
 .tp-main-menu {
-  padding: 6em 5em 0 0;
+  padding: 6em 3em 0 .8em;
 }
 
 #tp-nav {
@@ -323,8 +331,9 @@ section {
   left: 0 ;
   display: block;
   height: 100vh;
-  padding-left: 5em !important;
+  padding:1em 0 0 2em !important;
   background-color: #fff;
+  transition: .8s ease-in;
 }
 
 #tp-nav .logo-area {
@@ -346,7 +355,11 @@ section {
   padding: 1em 3em 1em .3em;
   letter-spacing: 2px;
   border-bottom: 1px solid #ddd;
+  transition: all .5s ease-in;
 
+}
+#tp-nav .menu-list a:hover {
+  color: #0544a8;
 }
 @media (max-width: 954px) {
   #tp-nav {
@@ -356,8 +369,8 @@ section {
   left: 0 ;
   display: none;
   height: 100vh;
-  width: 50%;
-  padding-left: 2em !important;
+  width: 80%;
+  padding:0 0 0 2em !important;
   background-color: #fff;
 }
 .tp-main-menu {
@@ -381,7 +394,7 @@ section {
   left: 0 ;
   display: none;
   height: 100vh;
-  width: 50%;
+  width: 80%;
   padding-left: 1em !important;
   background-color: #fff;
 }
@@ -403,7 +416,7 @@ section {
   left: 0 ;
   display: none;
   height: 100vh;
-  width: 50%;
+  width: 80%;
   padding-left: 1em !important;
   background-color: #fff;
 }
@@ -425,7 +438,7 @@ section {
   left: 0 ;
   display: none;
   height: 100vh;
-  padding-left: 2em !important;
+  padding-left: 3em !important;
   background-color: #fff;
 }
 
@@ -440,38 +453,40 @@ section {
 }
 @media (max-width: 426px) {
 .tp-main-menu {
-  padding: 7em 1em 0 0;
+  padding: 3.5em 4em 0 0;
 } 
   #tp-nav .menu-list a {
 
-  line-height: 2em;
+  line-height: 3.5em;
 
 }
 }
 #sub-menu {
   position: fixed;
   top: 0;
-  left: 25%;
-  width: 25%;
+  left: 16.5%;
+  width: 18%;
   display: none;
   height: 100vh;
-  padding: 10.7em 5em 0 5em;
+  padding: 12em 3em 0 3em;
   -webkit-transition: display .8s ease;
   -o-transition: display .8s ease;
   transition: display .8s ease;
   background-color: #f4f4f4;
 }
 
+
 #sub-menu .menu-list a {
   font-family: 'Space Mono', monospace;
   font-size: 14px;
   font-weight: 500;
   line-height: 4em;
-  padding: 1em 5em 1em .3em;
+  padding: 1em 9em 1em .3em;
   letter-spacing: 2px;
   border-bottom: 1px solid #ddd;
 
 }
+
 @media (max-width: 960px) {
   #sub-menu {
   position: fixed;
@@ -641,6 +656,7 @@ section {
 /*============= Intro ===========*/
 .main-content .tp-intro {
   width: 100%;
+  padding: 0 30px 0 70px;
 }
 
 .main-content .tp-intro .tp-intro-content {
@@ -649,9 +665,9 @@ section {
 }
 
 .main-content .tp-intro .tp-intro-content h1 {
-  font-size: 42px;
+  font-size: 32px;
   font-weight: 900;
-  line-height: 1.8em;
+  line-height: 2em;
   width: 100%;
 }
 
@@ -753,24 +769,25 @@ Home page
 .tp-about .tp-about-content .tp-about-text1 {
   font-family: 'Space Mono', monospace;
   min-height: 50vh;
-  padding: 5em 5em 5em 4em;
+  padding: 3em 5em 5em 4em;
 }
 .tp-about .tp-about-content .tp-about-text2 {
   font-family: 'Space Mono', monospace;
   min-height: 50vh;
-  padding: 6em 5em 5em 4em;
+  padding: 6em 5em 5em 70px;
 }
 
 .tp-about .tp-about-content .tp-about-text1 h1, 
 .tp-about .tp-about-content .tp-about-text2 h1{
   font-size: 22px;
   font-weight: 600;
-  line-height: 2em;
+  line-height: 3em;
 }
 
 .tp-about .tp-about-content .tp-about-text1 p,
 .tp-about .tp-about-content .tp-about-text2 p {
   font-size: 16px;
+  line-height: 1.8em;
   font-weight: 400;
   opacity: .7;
 }
@@ -907,6 +924,7 @@ Home page
 
 .tp-featured .tp-featured-header {
   font-family: 'Space Mono', monospace;
+  padding: 1em 0 0 3.5em;
 }
 
 .tp-featured .tp-featured-header h1 {
@@ -914,9 +932,8 @@ Home page
   font-size: 30px;
   font-weight: 600;
   line-height: 2em;
-  line-height: 2em;
   color: #393939;
-  padding: 1em;
+  
 }
 
 .tp-featured .tp-featured-header p {
@@ -1009,11 +1026,11 @@ Home page
 /*======== People ============*/
 .tp-people {
   font-family: 'Space Mono', monospace;
-  padding: 5em 0 5em 0;
+  padding: 70px 0 100px 0;
   overflow-x: hidden;
 }
 .tp-people .tp-people-heading h1 {
-  padding: 0 2em 2em 0;
+  padding: 0 0 2em 0;
 }
 .tp-people .tp-sec .tp-left {
   position: relative;
@@ -1058,7 +1075,7 @@ Home page
 }
 .tp-people .tp-sec .tp-right .tp-right-text {
   position: relative;
-  height: 70vh;
+  min-height: 648px;
   padding: 5.4em 0 0 3em;
 }
 
@@ -1071,7 +1088,7 @@ Home page
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text {
   position: absolute;
-  bottom: 10px;
+  bottom: 35px;
   width: 100%;
 }
 
@@ -1208,9 +1225,10 @@ About page
 .about-us-holder .about-us-text {
   min-height: 50vh;
   padding:6em !important;
+  padding-left: 3.5em !important;
 }
 .about-us-holder .about-us-text p {
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Space Mono', monospace;
   padding: 2em;
   opacity: .7;
