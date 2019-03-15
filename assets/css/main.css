@@ -475,7 +475,10 @@ section {
   background-color: #f4f4f4;
 }
 
+.sub-toggle:hover #sub-menu {
+  display: block !important;
 
+}
 #sub-menu .menu-list a {
   font-family: 'Space Mono', monospace;
   font-size: 14px;
@@ -926,7 +929,12 @@ Home page
   font-family: 'Space Mono', monospace;
   padding: 1em 0 0 3.5em;
 }
-
+@media (max-width:954px) {
+  .tp-featured .tp-featured-header {
+  font-family: 'Space Mono', monospace;
+  padding: 1em 0 0 1em;
+}
+}
 .tp-featured .tp-featured-header h1 {
   font-family: 'Space Mono', monospace;
   font-size: 30px;
@@ -1075,7 +1083,6 @@ Home page
 }
 .tp-people .tp-sec .tp-right .tp-right-text {
   position: relative;
-  min-height: 648px;
   padding: 5.4em 0 0 3em;
 }
 
@@ -1086,15 +1093,10 @@ Home page
   opacity: .7;
 }
 
-.tp-people .tp-sec .tp-right .tp-right-text .bottom-text {
-  position: absolute;
-  bottom: 35px;
-  width: 100%;
-}
 
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text p {
   font-size: 18px;
-  margin: 30px 0;
+  padding: 30px 0;
   opacity: .7;
 }
 
@@ -1119,7 +1121,11 @@ Home page
 .tp-people .tp-sec .tp-right .tp-right-text .bottom-text .tp-button:last-child:hover {
   color: #fff;
 }
-
+.tp-people-box {
+  height: 52.6vh;
+  display: flex;
+  align-items: flex-end;
+}
 @media (max-width: 754px) {
   .tp-people {
   font-family: 'Space Mono', monospace;
@@ -1177,16 +1183,12 @@ Home page
     display: none;
   }
 }
-@media only screen and (max-width: 1274px) {
+@media only screen and (max-width: 1280px) {
   .tp-people .tp-sec .tp-right .tp-right-text {
   position: relative;
-  min-height: 50vh;
+  min-height: 75vh;
   padding: 5.4em 0 0 1em;
 }
-.tp-people .tp-sec .tp-right .tp-right-text .bottom-text {
-  position: absolute;
-  bottom: 4em;
- }
 }
 /*======== Footer =======*/
 .tp-footer {
