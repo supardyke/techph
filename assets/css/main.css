@@ -41,7 +41,7 @@ section {
 }
 /*====:: Text/Font :: ===*/
 .title {
-  font-size: 28px !important;
+  font-size: 24px !important;
 }
 .tab {
   border-bottom:none !important;
@@ -669,8 +669,8 @@ section {
 
 .main-content .tp-intro .tp-intro-content h1 {
   font-size: 32px;
-  font-weight: 900;
-  line-height: 2em;
+  font-weight: 900 !important;
+  line-height: 1.5em;
   width: 100%;
 }
 
@@ -758,7 +758,7 @@ Home page
 
 .tp-about .tp-about-content .tp-about-img2 {
   min-height: 100vh;
-  margin-top: -50vh;
+  margin-top: -20vw;
   background: url('/assets/img/tp-about/tp-about-2.jpg');
   background-position: center center;
   background-size: cover;
@@ -771,8 +771,10 @@ Home page
 
 .tp-about .tp-about-content .tp-about-text1 {
   font-family: 'Space Mono', monospace;
-  min-height: 50vh;
-  padding: 3em 5em 5em 4em;
+  height: 65vh;
+  padding: 0 5em 5em 70px;
+  display: flex;
+  align-items: center;
 }
 .tp-about .tp-about-content .tp-about-text2 {
   font-family: 'Space Mono', monospace;
@@ -794,6 +796,7 @@ Home page
   font-weight: 400;
   opacity: .7;
 }
+.
 
 .tp-about .tp-about-content .tp-about-text a {
   margin-right: .6em;
@@ -1076,7 +1079,6 @@ Home page
 .tp-people .tp-sec .tp-left .tp-people-heading {
   font-size: 30px;
   font-weight: 600;
-  line-height: 2em;
   line-height: 2em;
   padding: 2.8em 0 0 2em;
   color: #fff;
