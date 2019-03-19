@@ -461,11 +461,20 @@ section {
 
 }
 }
+@media (max-width: 1520px) {
+  .tp-main-menu {
+  padding: 3.5em 3em 0 .8em;
+}
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
 #sub-menu {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 16.5%;
-  width: 18%;
+  left: 100%;
+  width: 100%;
   display: none;
   height: 100vh;
   padding: 12em 3em 0 3em;
@@ -474,11 +483,6 @@ section {
   transition: display .8s ease;
   background-color: #f4f4f4;
 }
-
-.sub-toggle:hover #sub-menu {
-  display: block !important;
-
-}
 #sub-menu .menu-list a {
   font-family: 'Space Mono', monospace;
   font-size: 14px;
@@ -486,8 +490,12 @@ section {
   line-height: 4em;
   padding: 1em 9em 1em .3em;
   letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
+/*   border-bottom: 1px solid #ddd; */
 
+}
+
+.dropdown:hover #sub-menu {
+    display: block;
 }
 
 @media (max-width: 960px) {
@@ -775,6 +783,8 @@ Home page
   padding: 0 5em 5em 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
+
 }
 .tp-about .tp-about-content .tp-about-text2 {
   font-family: 'Space Mono', monospace;
@@ -839,14 +849,16 @@ Home page
   .tp-about .tp-about-content .tp-about-text1 {
   font-family: 'Space Mono', monospace;
   min-height: 50vh;
-  padding: 2em 5em 5em 4em;
+  padding: 0 5em 5em 4em;
 }
+.tp-about .tp-about-content .tp-about-img2 {
+  min-height: 100vh;
+  margin-top: -25vw;
+  background: url('/assets/img/tp-about/tp-about-2.jpg');
+  background-position: center center;
+  background-size: cover;
 }
-@media only screen and (max-width: 1274px) {
-  .tp-about .tp-about-content .tp-about-text {
-    min-height: 50vh;
-    padding: 2em 2em 2em 4em;
-  }
+
 }
 
 @media only screen and (max-width: 954px) {
@@ -1186,10 +1198,17 @@ Home page
   }
 }
 @media only screen and (max-width: 1280px) {
-  .tp-people .tp-sec .tp-right .tp-right-text {
-  position: relative;
-  min-height: 75vh;
-  padding: 5.4em 0 0 1em;
+ .tp-people-box {
+  height: 41vh !important;
+  display: flex;
+  align-items: flex-end;
+}
+}
+@media only screen and (max-width: 1520px) {
+ .tp-people-box {
+  height: 36vh;
+  display: flex;
+  align-items: flex-end;
 }
 }
 /*======== Footer =======*/
