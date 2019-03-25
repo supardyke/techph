@@ -329,11 +329,24 @@ section {
   z-index: 5;
   top: 0;
   left: 0 ;
-  display: block;
   height: 100vh;
-  padding:1em 0 0 2em !important;
   background-color: #fff;
   transition: .8s ease-in;
+}
+
+#tp-nav > div:first-child {
+  padding:1em 0 0 2em !important;
+}
+
+#tp-nav > div:last-child {
+  padding:12.1em 2em 0 2em !important;
+  background-color: #F4F4F4;
+  height: 100vw;
+}
+
+#tp-nav-two{
+  display: flex;
+  display: none;
 }
 
 #tp-nav .logo-area {
@@ -519,136 +532,15 @@ section {
     position: relative;
     display: inline-block;
 }
-#sub-menu {
-  position: absolute;
-  top: 0;
-  left: 100%;
-  width: 100%;
-  display: none;
-  height: 100vh;
-  padding: 12em 3em 0 3em;
-  -webkit-transition: display .8s ease;
-  -o-transition: display .8s ease;
-  transition: display .8s ease;
-  background-color: #f4f4f4;
-}
-#sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 4em;
-  padding: 1em 9em 1em .3em;
-  letter-spacing: 2px;
-/*   border-bottom: 1px solid #ddd; */
-
-}
 
 .dropdown:hover #sub-menu {
     display: block;
 }
-
-@media (max-width: 960px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 10em 2em 0 2em;
-  }
-}
-@media (max-width: 744px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 6em 2em 0 2em;
-  }
-  #sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1em;
-  padding: 1em 5em 1em .3em;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
-
-}
-}
-@media (max-width: 634px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 5.5em 1em 0 1em;
-  }
-  #sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1em;
-  padding: 1em 5em 1em .3em;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
-
-}
-}
-@media (max-width: 594px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 15em 1em 0 1em;
-  }
-  #sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 3em;
-  padding: 1em 5em 1em .3em;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
-
-}
-}
-@media (max-width: 426px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 12em 1em 0 1em;
-  }
-  #sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 2em;
-  padding: 1em 5em 1em .3em;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
-
-}
-}
-@media (max-width: 354px) {
-  #sub-menu {
-  position: fixed;
-  top: 0;
-  left: 50%;
-  width: 50%;
-    padding: 12em 1em 0 1em;
-  }
-  #sub-menu .menu-list a {
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 2em;
-  padding: 1em 5em 1em .3em;
-  letter-spacing: 2px;
-  border-bottom: 1px solid #ddd;
-
+@media (max-width: 1280px) {
+  #tp-nav > div:last-child {
+  padding:9em 2em 0 2em !important;
+  background-color: #F4F4F4;
+  height: 100vw;
 }
 }
 #tp-nav .menu-list a:hover {
@@ -809,7 +701,7 @@ Home page
 
 .tp-about .tp-about-content .tp-about-img {
   min-height: 100vh;
-  background: url('/assets/img/tp-about/tp-about-1.jpg');
+  background: url('../img/tp-about/tp-about-1.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -817,7 +709,7 @@ Home page
 .tp-about .tp-about-content .tp-about-img2 {
   min-height: 100vh;
   margin-top: -20vw;
-  background: url('/assets/img/tp-about/tp-about-2.jpg');
+  background: url('../img/tp-about/tp-about-2.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -904,7 +796,7 @@ Home page
 .tp-about .tp-about-content .tp-about-img2 {
   min-height: 100vh;
   margin-top: -25vw;
-  background: url('/assets/img/tp-about/tp-about-2.jpg');
+  background: url('../img/tp-about/tp-about-2.jpg');
   background-position: center center;
   background-size: cover;
 }
@@ -1309,7 +1201,7 @@ About page
 }
 .about-us-holder .about-us-img {
  min-height: 50vh;
- background: url('/assets/img/tp-people/about-us.jpg');
+ background: url('../img/tp-people/about-us.jpg');
  background-repeat: no-repeat;
  background-position: center center;
  background-size: cover;
